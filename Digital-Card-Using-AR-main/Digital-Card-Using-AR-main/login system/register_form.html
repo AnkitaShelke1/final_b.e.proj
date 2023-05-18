@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register form</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="form-container">
+
+   <form action="api/register.php" method="post">
+      <h3>register now</h3>
+
+        <select name="user_type">
+         <option value="user">User</option>
+
+         <option value="admin">Admin</option>
+          <a href="file:///D:/myWebsite/login%20system/admin%20dashboard/admin.html">Admin</a>
+      </select>
+      <input type="text" name="name" required placeholder="Enter your name">
+      <input type="email" name="email" required placeholder="Enter your email">
+      <input type="password" name="password" required placeholder="Enter your password">
+      <input type="password" name="cpassword" required placeholder="Confirm your password">
+
+      <input type="submit" name="submit" value="Register" class="form-btn">
+      <p>Already have an account? <a href="login_form.html">Login now</a></p>
+   </form>
+
+</div>
+
+</body>
+</html>
